@@ -1,0 +1,142 @@
+.container{
+    width: 100%;
+}
+
+.topbar{
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topicon{
+    font-size: 35px;
+    color: var(--dark);
+}
+
+.topbar p{
+    color: var(--dark);
+    font-size: 15px;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.navigation{
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid var(--disabled);
+}
+
+.left, .right, .center{
+    flex: 1;
+    padding: 15px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar{
+    max-width: 350px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--disabled);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.searchicon{
+    font-size: 17.5px;
+    margin-right: 5px;
+    color: var(--info);
+}
+
+.searchbar input{
+    width: calc(100% - 45px);
+    height: 100%;
+    font-size: 15px;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--dark);
+    border: 5px solid var(--dark);
+    padding: 7.5px 20px;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+}
+
+.loginlink{
+    font-size: 15px;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+    padding: 6px 15px;
+    letter-spacing: 1.1px;
+    margin-right: 10px;
+    transition: all 0.25s ease;
+}
+
+.loginlink:hover{
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.registerlink{
+    font-size: 15px;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 6px 15px;
+    letter-spacing: 1.1px;
+    margin-right: 10px;
+    transition: all 0.25s ease;
+}
+
+.registerlink:hover{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.cartlink{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.carticon{
+    font-size: 25px;
+    color: var(--dark);
+}
+
+.cartcount{
+    position: absolute;
+    top: -10px;
+    right: -5px;
+    font-size: 15px;
+    padding: 2.5px 5px;
+    background-color: var(--danger);
+    color: #fff;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 786px) {
+    .left{
+        display: none;
+    }
+
+    .navigation{
+        flex-direction: column;
+    }
+
+    .center{
+        margin-bottom: 10px;
+    }
+}
