@@ -13,7 +13,7 @@ const Banner = () => {
                 <h4>Season's best products & best prices!</h4>
                 <h1>buy from us <br/> gain from us!</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem unde nemo pariatur.</p>
-                <Link to="/" className={styles.link}>Shop Now</Link>
+                <Link to="/products" className={styles.link}>Shop Now</Link>
             </article>
         </div>
     </div>

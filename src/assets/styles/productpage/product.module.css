@@ -1,0 +1,172 @@
+.content{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+}
+
+.left{
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left img{
+    max-width: 275px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.terminfo{
+    border: 1px solid var(--disabled);
+    border-radius: 10px;
+    padding: 15px 10px;
+    max-width: 275px;
+    width: 100%;
+}
+
+.termtitle{
+    font-size: 16.5px;
+    font-weight: 500;
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+.praiseline{
+    border-top: 1px solid var(--disabled);
+    padding-top: 15px;
+    display: flex;
+}
+
+.praiselineicon{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    font-size: 25px;
+    color: var(--secondary);
+}
+
+.praiselineText{
+    flex: 5;
+}
+
+.praiselineText p{
+    font-size: 15px;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.praiselineText span{
+    font-size: 14px;
+    color: var(--info);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.right{
+    flex: 1;
+    padding: 25px;
+}
+
+.iteminfo{
+    max-width: 500px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.iteminfo h2{
+    font-size: 40px;
+    color: var(--dark);
+    margin-bottom: 25px;
+    letter-spacing: 1.1px;
+}
+
+.iteminfo h4{
+    font-size: 25px;
+    color: var(--secondary);
+    margin-bottom: 25px;
+}
+
+.iteminfo p{
+    font-size: 17.5px;
+    letter-spacing: 1.1px;
+    color: var(--info);
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+
+.size{
+    width: 120px;
+    height: 45px;
+    border: 1px solid var(--disabled);
+    font-size: 15px;
+    padding: 0 5px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.amount{
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.amount label{
+    font-size: 14px;
+    color: var(--info);
+    margin-bottom: 10px;
+}
+
+.amount input{
+    width: 120px;
+    height: 45px;
+    border: 1px solid var(--disabled);
+    font-size: 15px;
+    padding: 0 5px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.addcart{
+    width: 150px;
+    height: 45px;
+    background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addcart span{
+    padding-right: 5px;
+    font-size: 15px;
+}
+
+.carticon{
+    font-size: 16.5px;
+}
+
+@media screen and (max-width: 768px) {
+    .content{
+        flex-direction: column;
+    }
+
+    .left{
+        margin-bottom: 15px;
+    }
+
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

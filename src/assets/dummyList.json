@@ -1,0 +1,112 @@
+{
+    "products": [
+        {
+            "_id": "001a",
+            "title": "T-shirt01",
+            "category": "T-shirts",
+            "price": 300,
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "sizes": ["Small", "Medium", "Large"],
+            "poster": "https://cdn.shopify.com/s/files/1/0154/8705/products/DSC_0983_1b48d0a6-93a4-4fdf-8934-35a1c136c807_530x@2x.jpg?v=1595806277"
+        },
+        {
+            "_id": "002a",
+            "title": "T-shirt02",
+            "category": "T-shirts",
+            "price": 320,
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "sizes": ["Small", "Medium", "Large"],
+            "poster": "https://images.ctfassets.net/40akseett7bn/7fX3T1gxhBgrnuRTSX42YC/3df4e92060c0d66cf7a78293b3189483/classic_t_shirt_womens.jpg"
+        },
+        {
+            "_id": "003a",
+            "title": "T-shirt03",
+            "category": "T-shirts",
+            "price": 275,
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "sizes": ["Small", "Medium", "Large"],
+            "poster": "https://m.media-amazon.com/images/I/C1ce8y0uOwS._CLa%7C2140%2C2000%7C51MrxYNS2TL.png%7C0%2C0%2C2140%2C2000%2B0.0%2C0.0%2C2140.0%2C2000.0_AC_SX342_.png"
+        },
+        {
+            "_id": "004a",
+            "title": "T-shirt04",
+            "category": "T-shirts",
+            "price": 305,
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "sizes": ["Small", "Medium", "Large"],
+            "poster": "https://i.ebayimg.com/images/g/mJ0AAOSwe9ZiVKmV/s-l500.jpg"
+        },
+        {
+            "_id": "005a",
+            "title": "Dress01",
+            "category": "Dresses",
+            "price": 600,
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "sizes": ["Small", "Medium", "Large"],
+            "poster": "https://dy9ihb9itgy3g.cloudfront.net/products/8934/55272/55272__d_f.740.webp"
+        },
+        {
+            "_id": "006a",
+            "title": "Dress02",
+            "category": "Dresses",
+            "price": 510,
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "sizes": ["Small", "Medium", "Large"],
+            "poster": "https://m.witchery.com.au/productimages/COMPMEDIUM/1/25252_160997_185541.jpg"
+        },
+        {
+            "_id": "007a",
+            "title": "Dress03",
+            "category": "Dresses",
+            "price": 500,
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "sizes": ["Small", "Medium", "Large"],
+            "poster": "https://cdn.shopify.com/s/files/1/0578/4594/0376/products/the-green-v-neck-jacquard-sheer-sleeve-dress-green-dresses-h7moba_1024x1024.jpg?v=1674341511"
+        },
+        {
+            "_id": "008a",
+            "title": "Dress04",
+            "category": "Dresses",
+            "price": 500,
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "sizes": ["Small", "Medium", "Large"],
+            "poster": "https://images.urbndata.com/is/image/Anthropologie/4130464030221_000_c16?$an-category$&qlt=80&fit=constrain"
+        },
+        {
+            "_id": "009a",
+            "title": "Jacket01",
+            "category": "Jackets",
+            "price": 625,
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "sizes": ["Small", "Medium", "Large"],
+            "poster": "https://nypost.com/wp-content/uploads/sites/2/2022/09/2-14.png"
+        },
+        {
+            "_id": "010a",
+            "title": "Jacket02",
+            "category": "Jackets",
+            "price": 625,
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "sizes": ["Small", "Medium", "Large"],
+            "poster": "https://images.asos-media.com/products/stradivarius-trench-coat-in-light-stone/203439012-1-stone?$n_480w$&wid=476&fit=constrain"
+        },
+        {
+            "_id": "011a",
+            "title": "Jacket03",
+            "category": "Jackets",
+            "price": 625,
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "sizes": ["Small", "Medium", "Large"],
+            "poster": "https://images.ctfassets.net/afruo3gr1g6h/5DRjBk9zvvPztkKqldesH/b373a9ac9cd982455ba1c0c4d44bf184/W-JKT-17_0210.jpg?w=1600&q=50"
+        },
+        {
+            "_id": "012a",
+            "title": "Jacket04",
+            "category": "Jackets",
+            "price": 625,
+            "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+            "sizes": ["Small", "Medium", "Large"],
+            "poster": "https://specials-images.forbesimg.com/imageserve/6142a235d493710fa7652695/Best-Women-s-Jackets-for-Fall--Zeagoo-Women-s-Bomber-Jacket/0x800.jpg?cropX1=0&cropX2=758&cropY1=43&cropY2=922"
+        }
+    ]
+}

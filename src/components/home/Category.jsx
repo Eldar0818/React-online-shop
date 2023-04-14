@@ -33,7 +33,7 @@ const Category = () => {
                         <img src={item.poster} alt="" />
                         <div className={styles.info}>
                             <h4>{item.title}</h4>
-                            <Link to="/">Shop Now</Link>
+                            <Link to={`/products/${item.title}`}>Shop Now</Link>
                         </div>
                     </div>
                 ))

@@ -1,0 +1,42 @@
+.container{
+    width: 100%;
+    padding: 25px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--disabled);
+    margin-bottom: 25px;
+}
+
+.container header{
+    flex: 1;
+    margin-bottom: 25px;
+}
+
+.container header h1{
+    font-size: 25px;
+    color: var(--dark);
+    margin-bottom: 15px;
+}
+
+.titlebox{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.titlebox span{
+    font-size: 20px;
+    color: var(--info);
+    font-style: italic;
+}
+
+@media screen and (max-width: 460px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .filtebox{
+        justify-content: center
+    }
+}

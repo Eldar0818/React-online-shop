@@ -1,8 +1,16 @@
-import React from 'react'
+import { useState } from 'react'
+import ListHeader from '../components/products/ListHeader'
+import ListItems from '../components/products/ListItems'
 
-const Products = () => {
+const Products = ({ pathname }) => {
+
   return (
-    <section className='page'>Products</section>
+    <section className='page'>
+      <ListHeader pathname={pathname}/>
+      <ListItems 
+        pathname={pathname}
+      />
+    </section>
   )
 }
 
