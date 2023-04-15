@@ -4,10 +4,12 @@ import Products from './pages/Products'
 import Navbar from './components/base/Navbar'
 import Footer from './components/base/Footer'
 import ProductPage from './pages/ProductPage'
+import ScrollToTop from './components/helper/ScrollToTop'
 
 const App = () => {
   return (
     <main className='App'>
+      <ScrollToTop />
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home />} />

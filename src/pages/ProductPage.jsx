@@ -1,30 +1,31 @@
 import styles from '../assets/styles/productpage/product.module.css'
 import ProductLeft from '../components/productpage/ProductLeft'
 import ProductRight from '../components/productpage/ProductRight'
-import data from '../assets/dummyList.json'
 import { useLocation } from 'react-router-dom'
+import { useFetchProducts } from '../components/helper/useProducts'
 
 const ProductPage = () => {
 
     const location = useLocation()
     const pathId = location.pathname.split("/")[2]
 
-    const product = data.products.filter(item => item._id === pathId)[0]
+    const { data: products } = useFetchProducts()
 
-    const { poster, sizes, title, description, price, category } = product
+    const product = products?.filter(item => item._id === pathId)[0]
+    console.log(product);
 
   return (
     <section className='page'>
         <div className={styles.content}>
             <ProductLeft
-                poster={poster}
+                poster={product?.poster}
             />
             <ProductRight
-                sizes={sizes}
-                title={title}
-                description={description}
-                price={price}
-                category={category}
+                sizes={product?.sizes}
+                title={product?.title}
+                description={product?.description}
+                price={product?.price}
+                category={product?.category}
             />
         </div>
     </section>

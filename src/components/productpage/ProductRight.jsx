@@ -21,7 +21,7 @@ const ProductRight = (props) => {
             <h4>{props.price * amount} Kr/-</h4>
             <p>{props.description}</p>
             <select id="size" className={styles.size}>
-                {props.sizes.map((opt, index) => (
+                {props.sizes?.map((opt, index) => (
                     <option key={index} value={opt}>{opt}</option>
                 ))}
             </select>
