@@ -115,23 +115,24 @@
 .amount{
     margin-bottom: 25px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
-.amount label{
-    font-size: 14px;
-    color: var(--info);
-    margin-bottom: 10px;
-}
-
-.amount input{
-    width: 120px;
+.amount button{
+    width: 45px;
     height: 45px;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.amount span{
+    padding: 5px 15px;
+    font-size: 20px;
     border: 1px solid var(--disabled);
-    font-size: 15px;
-    padding: 0 5px;
-    margin-bottom: 25px;
-    border-radius: 5px;
+    margin: 0 15px;
 }
 
 .addcart{
