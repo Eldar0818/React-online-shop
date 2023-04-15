@@ -29,7 +29,7 @@ const Navbar = () => {
                 <div className={styles.btns}>
                     <Link to="/" className={styles.loginlink}>Sign In</Link>
                     <Link to="/" className={styles.registerlink}>Sign Up</Link>
-                    <Link to="/" className={styles.cartlink}>
+                    <Link to="/cart" className={styles.cartlink}>
                         <BsCartFill className={styles.carticon}/>
                         <span className={styles.cartcount}>0</span>
                     </Link>

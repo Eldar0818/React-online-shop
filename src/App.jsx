@@ -5,6 +5,7 @@ import Navbar from './components/base/Navbar'
 import Footer from './components/base/Footer'
 import ProductPage from './pages/ProductPage'
 import ScrollToTop from './components/helper/ScrollToTop'
+import Cart from './pages/Cart'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path='/products/Dresses' element={<Products pathname="Dresses"/>} />
         <Route path='/products/Jackets' element={<Products pathname="Jackets"/>} />
         <Route path='/product/:id' element={<ProductPage/>} />
+        <Route path='/cart' element={<Cart/>} />
       </Routes>
       <Footer/>
       <div className="copyright">
