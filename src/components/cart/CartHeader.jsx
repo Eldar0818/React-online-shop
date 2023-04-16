@@ -1,9 +1,9 @@
 import styles from '../../assets/styles/cart/cartpage.module.css'
 
-const CartHeader = () => {
+const CartHeader = ({cartLenght}) => {
   return (
     <div className={styles.header}>
-        <h2 className={styles.heading}>YOUR CART (3)</h2>
+        <h2 className={styles.heading}>YOUR CART ({cartLenght})</h2>
     </div>
   )
 }

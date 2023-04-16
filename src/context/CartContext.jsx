@@ -1,7 +1,7 @@
 import { createContext, useReducer, useEffect, useContext } from 'react';
 
 const initialState = {
-    cartItems: [],
+    cartItems: JSON.parse(localStorage.getItem("cartItems")) || [],
 };
 
 const CartContext = createContext();
@@ -24,7 +24,7 @@ const cartReducer = (state, action) => {
       } else {
         return {
           ...state,
-          cartItems: [...state.cartItems, { ...action.payload, amount: 1 }],
+          cartItems: [...state.cartItems, { ...action.payload, amount: action.payload.amount }],
         };
       }
     case 'REMOVE_FROM_CART':
@@ -69,7 +69,7 @@ const CartContextProvider = (props) => {
   };
 
   const getCartTotal = () => {
-    return state.cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+    return state.cartItems.reduce((total, item) => total + item.price * item.amount, 0);
   };
 
   return (

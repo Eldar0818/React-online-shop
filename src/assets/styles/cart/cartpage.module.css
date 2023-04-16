@@ -64,25 +64,11 @@
     justify-content: space-evenly;
 }
 
-.amount{
-    display: flex;
-    align-items: center;
-}
-
-.amount button{
-    width: 25px;
-    height: 25px;
-    font-size: 15px;
-    background-color: var(--secondary);
-    color: #fff;
+.trashicon{
     cursor: pointer;
-    border-radius: 50%;
-}
-
-.amount span{
-    font-size: 15px;
-    color: var(--dark);
-    padding: 0 10px;
+    color: var(--danger);
+    font-size: 25px;
+    margin-bottom: 15px;
 }
 
 .summary{

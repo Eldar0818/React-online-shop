@@ -1,13 +1,10 @@
 import styles from '../../assets/styles/cart/cartpage.module.css'
-import { useFetchCartItems } from '../helper/useCart'
 
-const CartSummery = () => {
+const CartSummery = ({ cartItems }) => {
 
-  const { data: itemList } = useFetchCartItems()
-
-  const totalPrice = itemList?.map(item => item.price * item.amount).reduce((total, num) => total + num, 0)
+  const totalPrice = cartItems ? cartItems.map(item => item.price * item.amount).reduce((total, num) => total + num, 0) : 0
   const shippingCost = totalPrice > 500 ? 0 : 120
-  const shippingDiscount = shippingCost === 0 ? -120 : 120
+  const shippingDiscount = shippingCost === 0 ? -120 : 0
 
   return (
     <div className={styles.summary}>

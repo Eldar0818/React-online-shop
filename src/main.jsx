@@ -5,6 +5,7 @@ import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ReactQueryDevtools } from 'react-query/devtools'
+import CartContextProvider from './context/CartContext'
 
 const queryClient = new QueryClient()
 
@@ -12,7 +13,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <QueryClientProvider client={queryClient}>
-        <App />
+        <CartContextProvider>
+          <App />
+        </CartContextProvider>
         <ReactQueryDevtools/>
       </QueryClientProvider>
     </BrowserRouter>

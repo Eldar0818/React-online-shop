@@ -2,8 +2,12 @@ import { Link } from 'react-router-dom'
 import styles from '../../assets/styles/base/navbar.module.css'
 import { CiDeliveryTruck } from 'react-icons/ci'
 import { BsSearch, BsCartFill } from 'react-icons/bs'
+import { useCartContext } from '../../context/CartContext'
 
 const Navbar = () => {
+
+    const { cartItems } = useCartContext()
+
   return (
     <div className={styles.container}>
 
@@ -31,7 +35,7 @@ const Navbar = () => {
                     <Link to="/" className={styles.registerlink}>Sign Up</Link>
                     <Link to="/cart" className={styles.cartlink}>
                         <BsCartFill className={styles.carticon}/>
-                        <span className={styles.cartcount}>0</span>
+                        <span className={styles.cartcount}>{cartItems.length}</span>
                     </Link>
                 </div>
             </div>

@@ -1,14 +1,14 @@
+import { useState } from 'react';
 import styles from '../../assets/styles/cart/cartpage.module.css'
-import { useFetchCartItems } from '../helper/useCart'
+import { BsFillTrashFill } from 'react-icons/bs'
 
-const CartItems = () => {
 
-    const { data: itemList } = useFetchCartItems()
+const CartItems = ({ cartItems,  removeFromCart }) => {
 
   return (
     <div className={styles.itembox}>
         {
-           itemList?.map(item => (
+          cartItems.length > 0 ? cartItems.map(item => (
             <div className={styles.cartitem} key={item._id}>
                 <div className={styles.itemleft}>
                     <img src={item.poster} alt="poster" />
@@ -29,21 +29,21 @@ const CartItems = () => {
                     </div>
                     <div className={styles.caritemInfo}>
                       <h4>Size:</h4>
-                      <p>{item.sizes[1]}</p>
+                      <p>{item.size}</p>
                     </div>
 
                 </div>
                 <div className={styles.itemright}>
-                  <div className={styles.amount}>
-                    <button>-</button>
-                    <span>{item.amount}</span>
-                    <button>+</button>
-                  </div>
-                  <h4>{item.price * item.amount} SEK</h4>
+                <h4>{item.price} SEK</h4>
+                <p>Quantiy: {item.amount}</p>
+                  <BsFillTrashFill 
+                    className={styles.trashicon} 
+                    onClick={() =>  removeFromCart(item._id)}
+                  />
                 </div>
             </div>
            ))
-        }
+        : <p>Your cart is empty</p> }
     </div>
   )
 }
