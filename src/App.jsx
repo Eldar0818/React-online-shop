@@ -6,6 +6,9 @@ import Footer from './components/base/Footer'
 import ProductPage from './pages/ProductPage'
 import ScrollToTop from './components/helper/ScrollToTop'
 import Cart from './pages/Cart'
+import SignIn from './pages/SignIn'
+import SignUp from './pages/SignUp'
+import CustomerPage from './pages/CustomerPage'
 
 const App = () => {
   return (
@@ -20,6 +23,9 @@ const App = () => {
         <Route path='/products/Jackets' element={<Products pathname="Jackets"/>} />
         <Route path='/product/:id' element={<ProductPage/>} />
         <Route path='/cart' element={<Cart/>} />
+        <Route path='/sign-in' element={<SignIn/>} />
+        <Route path='/sign-up' element={<SignUp/>} />
+        <Route path='/customer' element={<CustomerPage/>} />
       </Routes>
       <Footer/>
       <div className="copyright">

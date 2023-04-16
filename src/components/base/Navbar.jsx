@@ -31,8 +31,8 @@ const Navbar = () => {
 
             <div className={styles.right}>
                 <div className={styles.btns}>
-                    <Link to="/" className={styles.loginlink}>Sign In</Link>
-                    <Link to="/" className={styles.registerlink}>Sign Up</Link>
+                    <Link to="/sign-in" className={styles.loginlink}>Sign In</Link>
+                    <Link to="/sign-up" className={styles.registerlink}>Sign Up</Link>
                     <Link to="/cart" className={styles.cartlink}>
                         <BsCartFill className={styles.carticon}/>
                         <span className={styles.cartcount}>{cartItems.length}</span>
